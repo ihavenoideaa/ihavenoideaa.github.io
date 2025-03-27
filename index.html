@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./APlayer.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>底角音乐播放器</title>
+    <style>
+      body {
+        background-color: #18171d;;
+      }
+    </style>
+</head>
+
+<body>
+  <script>
+    window.meting_api = 'https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&auth=:auth&r=:r'
+  </script>
+    <div class="needEndHide" id="nav-music">
+      <div id="nav-music-hoverTips" onclick="sco.musicToggle()">音乐已暂停</div>
+      <meting-js id="8407304077" server="netease" type="playlist" mutex="true" preload="none" data-lrctype="0" order="random" volume="0.8">
+      </meting-js>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    <script src="./main.js"> </script>
+</body>
+</html>  
